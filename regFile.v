@@ -61,7 +61,7 @@ module regFile(
 			begin
 				temp = regDst ? rd_add : rt_add;
 				regFile[temp] = writeData;
-				Rd_data = regFile[rd_add];			// just shows what is being stored at rd_add in regFile
+				Rd_data = regFile[temp];			// just shows what is being stored at rd_add in regFile
 			end
 	end
 	
